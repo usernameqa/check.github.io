@@ -8,7 +8,7 @@
     function fetchNoCheckCount() {
       const status = document.getElementById('statusInput').value; // 获取输入框中的状态值
       const xhr = new XMLHttpRequest();
-      xhr.open('GET', `http://127.0.0.1:8088/admin/loginnew/getNoCheckCount?status=${status}`, true);
+      xhr.open('GET', `http://fox.aiautopilot.net/admin/loginnew/getNoCheckCount?status=${status}`, true);
       xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
       xhr.onreadystatechange = function () {
         if (xhr.readyState === 4) {
